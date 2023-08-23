@@ -1,0 +1,28 @@
+
+<html>
+<head>
+    <title>Synthetic Dataset Generator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Synthetic Dataset Generator</h1>
+    </header>
+    <section>
+        <label for="features">Features:</label>
+        <input type="text" id="features" placeholder="Feature 1, Feature 2, ...">
+        <br>
+        <label for="dataTypes">Data Types:</label>
+        <input type="text" id="dataTypes" placeholder="string, number, ...">
+        <br>
+        <label for="sampleData">Sample Data:</label>
+        <input type="number" id="sampleData" min="1" value="10">
+        <br>
+        <button id="generateButton">Generate Dataset</button>
+    </section>
+    <section id="result">
+        <!-- Display generated dataset here -->
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

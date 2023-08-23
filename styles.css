@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    margin: 20px;
+}
+
+section {
+    margin: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
