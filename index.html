@@ -1,28 +1,231 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Synthetic Dataset Generator</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synthetic Data Generator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>Synthetic Dataset Generator</h1>
+        <nav>
+            <div class="logo">
+                <span>SynthiData</span>
+            </div>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#use-cases">Use Cases</a></li>
+                <!--<li><a href="#pricing">Pricing</a></li>-->
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="product.html" class="cta-button">Get Started</a>
+        </nav>
     </header>
-    <section>
-        <label for="features">Features:</label>
-        <input type="text" id="features" placeholder="Feature 1, Feature 2, ...">
-        <br>
-        <label for="dataTypes">Data Types:</label>
-        <input type="text" id="dataTypes" placeholder="string, number, ...">
-        <br>
-        <label for="sampleData">Sample Data:</label>
-        <input type="number" id="sampleData" min="1" value="10">
-        <br>
-        <button id="generateButton">Generate Dataset</button>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+        <h1>Empower Your Data with Our Synthetic Data Generator</h1>
+        <p>Your solution for realistic synthetic data to supercharge your analytics and machine learning projects.</p>
+        <a href="product.html" class="cta-button">Try It Now</a>
+        </div>
     </section>
-    <section id="result">
-        <!-- Display generated dataset here -->
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="feature-cards-container">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+            <!--<img src="feature1-icon.png" alt="Feature 1 Icon">-->
+            <h2 class="feature-title">Customizable Features</h2>
+            <p class="feature-description">Users can specify the features (columns) they want in their synthetic dataset by entering them in the "Features" input field.</p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="feature-card">
+            <!--<img src="feature1-icon.png" alt="Feature 1 Icon">-->
+            <h2 class="feature-title">Data Type Specification</h2>
+            <p class="feature-description">Users can define the data types for each feature by entering them in the "Data Types" input field. Common data types might include string, number, date, etc.</p>
+        </div>
+        <div class="feature-card">
+       
+            <!--<img src="feature1-icon.png" alt="Feature 1 Icon">-->
+            <h2 class="feature-title">Sample Data Size</h2>
+            <p class="feature-description">Users can determine the size of their synthetic dataset by specifying the number of samples in the "Sample Data" input field.</p>
+        </div>
+        <div class="feature-card">
+            <!--<img src="feature1-icon.png" alt="Feature 1 Icon">-->
+            <h2 class="feature-title">Data Generation</h2>
+            <p class="feature-description">The tool generates synthetic data based on the specified features, data types, and sample size. It respects the data types to ensure data consistency.</p>
+        </div>
+        <div class="feature-card">
+            <!--<img src="feature1-icon.png" alt="Feature 1 Icon">-->
+            <h2 class="feature-title">Data Preview</h2>
+            <p class="feature-description">After generating the synthetic dataset, users can preview the data, typically displayed in a table format, in the "result" section of the web page.</p>
+        </div>
+        <div class="feature-card">
+            <!--<img src="feature1-icon.png" alt="Feature 1 Icon">-->
+            <h2 class="feature-title">Downloadable Data</h2>
+            <p class="feature-description">Users have the option to download the generated synthetic dataset in common data formats like CSV, JSON, or Excel for further analysis.</p>
+        </div>
+        <div class="feature-card">
+            <!--<img src="feature1-icon.png" alt="Feature 1 Icon">-->
+            <h2 class="feature-title">Data Validation</h2>
+            <p class="feature-description">The tool may include data validation features to ensure the generated data conforms to specified constraints, such as minimum and maximum values, or date ranges.</p>
+        </div>
+        <div class="feature-card">
+            <!--<img src="feature1-icon.png" alt="Feature 1 Icon">-->
+            <h2 class="feature-title">Data Distribution Options</h2>
+            <p class="feature-description">Users can specify the distribution of data for each feature, allowing for customization of data patterns (e.g., uniform, normal, categorical).</p>
+        </div>
+        <div class="feature-card">
+            <!--<img src="feature1-icon.png" alt="Feature 1 Icon">-->
+            <h2 class="feature-title">Data Privacy Measures</h2>
+            <p class="feature-description">The tool can include privacy features like anonymization or pseudonymization to protect sensitive information in the synthetic dataset</p>
+        </div>
+
+        
+        <!-- Add more features as needed -->
+        </div>
     </section>
-    <script src="script.js"></script>
+
+    <!-- Use Cases Section -->
+
+<section id="use-cases" class="use-cases">
+   
+    <div class="use-case">
+        <h3>Use Case 1: Data Privacy Compliance</h3>
+        <p>Anonymize sensitive data by replacing real information with synthetic data to comply with privacy regulations like GDPR or HIPAA.</p>
+    </div>
+    <div class="use-case">
+        <h3>Use Case 2: Machine Learning Model Development</h3>
+        <p>Generate synthetic data for training and fine-tuning machine learning models when real data is limited or unavailable.</p>
+    </div>
+    <div class="use-case">
+        <h3>Use Case 3: Data Testing and Validation</h3>
+        <p>Perform comprehensive data testing and validation using synthetic data without exposing real data to potential risks or corruption.</p>
+    </div>
+    <!-- Add more use case cards below -->
+    <div class="use-case">
+        <h3>Use Case 4: Benchmarking and Evaluation</h3>
+        <p>Create benchmark datasets with known properties to evaluate and compare the performance of data analysis algorithms and tools.</p>
+    </div>
+    <div class="use-case">
+        <h3>Use Case 5: Data Augmentation</h3>
+        <p>Enhance real datasets with synthetic data to increase the volume and diversity of training data for machine learning models.</p>
+    </div>
+</section>
+
+
+    <!-- Pricing Section -->
+<!--    
+    <section id="pricing" class="pricing">
+        < Pricing Plans -->
+    <!--    <div class="pricing-plans">
+            < Plan 1 -->
+  <!--          <div class="plan">
+                <h2>Basic Plan</h2>
+                <p>Features included in this plan.</p>
+                <p>Price: $X/month</p>
+                <a href="#" class="cta-button">Sign Up</a>
+            </div>
+
+            <! Plan 2 -->
+            <!--
+            <div class="plan">
+                <h2>Premium Plan</h2>
+                <p>Features included in this plan.</p>
+                <p>Price: $Y/month</p>
+                <a href="#" class="cta-button">Sign Up</a>
+            </div>
+
+            <! Add more plans as needed -->
+      <!--  </div>
+    </section> --> 
+
+    <!-- About Us Section -->
+    <section id="about-us" class="about-us">
+        <!-- Company Overview -->
+        <div class="company-overview">
+            <h2>About Our Company</h2>
+            <p>SynthiData's mission is to empower businesses with high-quality synthetic data solutions. We believe in democratizing access to realistic and customizable data for analytics and machine learning, fostering innovation, and helping organizations make data-driven decisions with confidence.</p>
+        </div>
+
+        <!-- Team -->
+        <div class="team">
+            <h2>Our Team</h2>
+            <!-- Team Member 1 -->
+            <div class="team-member">
+               <!--<img src="images.jpg" alt="CEO"> -->
+                <h3>IndraKiranReddy Bhumanapalli</h3>
+                <p>Co-Founder & CEO</p>
+            </div>
+
+            <!-- Team Member 2 
+            <div class="team-member">
+                <img src="team-member2.jpg" alt="Team Member 2">
+                <h3>Jane Smith</h3>
+                <p>Co-Founder & CTO</p>
+            </div>-->
+
+            <!-- Add more team members as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or inquiries, please don't hesitate to reach out to us.</p>
+            <div class="contact-info">
+                <div class="contact-detail">
+                    <h3>Email:</h3>
+                    <p>contact@example.com</p>
+                </div>
+                <div class="contact-detail">
+                    <h3>Phone:</h3>
+                    <p>08568-299995</p>
+                </div>
+                <div class="contact-detail">
+                    <h3>Address:</h3>
+                    <p>Pulivendula,Andra Pradesh,India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">
+            <span class="logo-text">SynthiData</span>
+        </div>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+        <p>&copy; 2023 Synthetic Data Generator. All rights reserved.</p>
+    </footer>
 </body>
+<script>
+    const featureCards = document.querySelectorAll('.feature-card');
+  
+    featureCards.forEach((card) => {
+      card.addEventListener('mouseenter', () => {
+        featureCards.forEach((otherCard) => {
+          if (otherCard !== card) {
+            otherCard.style.opacity = '0.7'; // Adjust the opacity as needed
+          }
+        });
+      });
+  
+      card.addEventListener('mouseleave', () => {
+        featureCards.forEach((otherCard) => {
+          otherCard.style.opacity = '1'; // Reset the opacity on mouse leave
+        });
+      });
+    });
+  </script>
+  
 </html>
