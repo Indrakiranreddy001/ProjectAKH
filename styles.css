@@ -1,17 +1,427 @@
+/* Reset some default styles for consistency */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color and text color for the entire page */
 body {
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
 }
 
+
+/* Header styles */
 header {
-    text-align: center;
-    margin: 20px;
+  background-color: #0078d4;
+  color: #fff;
+  padding: 10px 0;
 }
 
-section {
-    margin: 20px;
+/* Apply a 3D effect to the <ul> in the header */
+header nav ul {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add 3D effect to the text */
 }
 
-label {
-    display: inline-block;
-    width: 100px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Hero section styles */
+.hero {
+  background: linear-gradient(to bottom, #0078d4, #004c87); /* Gradient background */
+  color: #fff; /* Text color */
+  text-align: center;
+  padding: 100px 0;
+}
+
+/* Hero section styles */
+.hero {
+  background: linear-gradient(to bottom, #0078d4, #004c87); /* Gradient background */
+  color: #fff; /* Text color */
+  text-align: center;
+  padding: 100px 0;
+}
+
+/* Hero content styles */
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  /* Add a 3D effect with text-shadow */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adjust values as needed */
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* CTA button styles */
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ff6600; /* Orange button color */
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.cta-button:hover {
+  background-color: #e65100; /* Darker orange on hover */
+}
+
+/* Features section styles */
+.features {
+  background-color: #f8f8f8; /* Light gray background */
+  padding: 80px 0;
+  text-align: center;
+  overflow: auto; /* Make the features section scrollable */
+}
+
+/* Feature card styles */
+.feature-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Feature card styles */
+.feature-card {
+  background-color: #fff; /* White background */
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  max-width: 400px; /* Adjust the maximum width as needed */
+  width: calc(50% - 40px); /* Set the card width to 50% of the container with margin considered */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  position: relative; /* Add relative positioning */
+}
+
+
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  z-index: 2; /* Stack the hovered card above others */
+}
+
+/* Add a transparent border to non-hovered cards */
+.feature-card:not(:hover) {
+  border-color: transparent;
+}
+
+
+/* Feature icon styles */
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: #fff;
+  background-color: #0078d4; /* Blue background for the icon */
+  margin-bottom: 20px;
+}
+
+
+/* Feature title styles with 3D effect */
+.feature-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  /* Add a 3D effect with text-shadow */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adjust values as needed */
+}
+
+
+
+
+/* Feature description styles with hover effect */
+.feature-description {
+  font-size: 16px;
+  color: #555;
+  margin-top: 15px;
+  opacity: 0; /* Initially set opacity to 0 to hide the description */
+  transition: opacity 0.3s ease; /* Add a smooth transition for opacity */
+}
+
+/* Show feature descriptions with a fade-in effect on hover */
+.feature-card:hover .feature-description {
+  opacity: 1; /* Set opacity to 1 on hover to make the description appear */
+}
+
+
+
+/* Use case card styles */
+
+/* Use Cases Section */
+
+.use-cases {
+  background-color: #007BFF; /* Change this to your desired shade of blue */
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+
+.use-case {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.use-case h3 {
+  font-size: 1.2rem; /* Reduce the font size */
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #007BFF; /* Set the text color to blue */
+}
+
+.use-case p {
+  font-size: 1rem; /* Reduce the font size */
+  line-height: 1.4;
+  color: #333;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show description on hover */
+.use-case:hover p {
+  opacity: 1;
+}
+
+
+
+/* Pricing section styles */
+.pricing {
+  background-color: #f9f9f9;
+  padding: 80px 0;
+}
+
+.pricing-plans {
+  display: flex;
+  justify-content: center;
+}
+
+.plan {
+  text-align: center;
+  margin: 0 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.plan h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.plan p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* About us section styles */
+.about-us {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.company-overview h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.team-member {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.team-member p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Contact us section styles */
+/* Contact Form Styles */
+/* Contact Section Styles */
+.contact {
+  background-color: #007BFF; /* Add your desired background color here */
+  color: white; /* Set text color to contrast with the background */
+  text-align: center;
+  padding: 50px 0;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-detail {
+  margin: 0 20px;
+  text-align: left;
+}
+
+.contact-detail h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.contact-detail p {
+  font-size: 1rem;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: auto;
+}
+
+footer ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+/* Responsive styles for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+  /* Adjust styles as needed for smaller screens */
+}
+
+/* Reset some default styles for consistency */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo styles */
+.logo {
+    background: linear-gradient(to right, #2d9cdb, #0078d4); /* Gradient background with improved coloring */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding around the text */
+    font-size: 36px; /* Font size */
+    font-weight: bold; /* Font weight */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font family */
+    border-radius: 5px; /* Rounded corners for the background */
+    display: inline-block; /* Makes the logo stay inline with other content */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Letter spacing */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Stronger box shadow for 3D effect */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth background color and transform transitions */
+    cursor: move; /* Change cursor to "move" on hover */
+}
+
+/* Hover effect */
+.logo:hover {
+    background: linear-gradient(to right, #ffb400, #ffcc00); /* Improved coloring on hover */
+    transform: translateY(-2px); /* Slight upward lift on hover for added depth */
 }
