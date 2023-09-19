@@ -9,16 +9,26 @@ generateButton.addEventListener('click', () => {
     const features = featuresInput.split(',').map(feature => feature.trim());
     const dataTypes = dataTypesInput.split(',').map(dataType => dataType.trim());
 
+    const myHeaders = {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET, POST, PUT',
+        'Access-Control-Allow-Headers': 'Content-Type',
+      };
+    const myHeadersJSON = JSON.stringify(myHeaders);
+  
+
     const requestBody = {
         features: features,
         dataTypes: dataTypes,
         sampleData: parseInt(sampleDataInput)
     };
+    
 
     fetch('/generate-dataset', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+           
         },
         body: JSON.stringify(requestBody)
     })
