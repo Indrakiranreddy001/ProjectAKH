@@ -1,8 +1,12 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import random
 import string
 
+
 app = Flask(__name__)
+cors = CORS(app, resources={r"/generate-dataset": {"origins": "*"}})
+
 
 @app.route('/generate-dataset', methods=['POST'])
 def generate_dataset():
