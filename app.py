@@ -5,10 +5,10 @@ import string
 
 
 app = Flask(__name__)
-cors = CORS(app, resources={r"/generate-dataset": {"origins": "*"}})
+cors = CORS(app, resources={r"/ProjectAKH/generate-dataset": {"origins": "*"}})
 
 
-@app.route('/generate-dataset', methods=['POST'])
+@app.route('/ProjectAKH/generate-dataset', methods=['POST'])
 def generate_dataset():
     data = request.json
     features = data['features']
