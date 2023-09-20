@@ -24,7 +24,7 @@ generateButton.addEventListener('click', () => {
     };
     
 
-    fetch('/generate-dataset', {
+    fetch('/ProjectAKH/generate-dataset', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
