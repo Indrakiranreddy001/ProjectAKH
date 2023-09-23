@@ -8,7 +8,7 @@ app = Flask(__name__)
 cors = CORS(app, resources={r"/ProjectAKH/generate-dataset": {"origins": "*"}})
 
 
-@app.route('/ProjectAKH/generate-dataset', methods=['POST'])
+@app.route('/generate-dataset', methods=['POST'])
 def generate_dataset():
     data = request.json
     features = data['features']
@@ -39,4 +39,4 @@ def generate_synthetic_dataset(features, data_types, sample_data):
     return dataset
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,port=5010)
