@@ -24,7 +24,7 @@ generateButton.addEventListener('click', () => {
     };
     
 
-    fetch('/generate-dataset', {
+    fetch('127.0.0.1/generate-dataset', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
