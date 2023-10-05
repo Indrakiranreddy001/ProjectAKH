@@ -24,7 +24,7 @@ generateButton.addEventListener('click', () => {
     };
     
 
-    fetch('127.0.0.1/generate-dataset', {
+    fetch('https://scaling-train-7wpwgq9grqwhwq6j-5010.app.github.dev/generate-dataset', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
