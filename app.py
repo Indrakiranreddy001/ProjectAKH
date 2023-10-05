@@ -5,7 +5,7 @@ import string
 
 
 app = Flask(__name__)
-cors = CORS(app, resources={r"/generate-dataset": {"origins": "*"}})
+cors = CORS(app, resources={r"https://scaling-train-7wpwgq9grqwhwq6j-5010.app.github.dev/generate-dataset": {"origins": "*"}})
 
 
 @app.route('/generate-dataset', methods=['POST'])
