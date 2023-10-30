@@ -47,7 +47,6 @@ def generate_synthetic_data(n_rows):
 # Generate synthetic dataset with 100 rows
 synthetic_dataset = generate_synthetic_data(n_rows=100)
 
-#sytheticdata = synthetic_dataset.write.csv("C:\Users\IndraKiranReddy\Desktop\Projects\SyntheticDataset\synthetic_dataset.csv", header=True, mode="overwrite")
 
 
 # Convert categorical features to numerical using StringIndexer and OneHotEncoder
@@ -78,7 +77,6 @@ predictions = model.transform(testing_data)
 
 # Show the predictions and actual prices
 predictions.select("features", "Price", "prediction").show()
-#predictions.write.json("C:\\Users\\IndraKiranReddy\Desktop\\Projects\\SyntheticDataset\\predictions_dataset.json" ,mode="overwrite")
 
 # Stop the Spark session
 #spark.stop()
